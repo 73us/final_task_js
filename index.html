@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 23 Task</title>
+    <link rel="shortcut icon" href="./Images/prometheus_icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- UP PART START -->
+        <div class="upper">
+            <h2 class="timer">01:00</h2>
+        </div>
+        <!-- UP PART END -->
+
+        <!-- MIDDLE PART START -->
+        <div class="control">
+            <button class="start">Start game</button>
+            <button class="check" disabled>Check result</button>
+            <button class="new">New game</button>
+            <button class="change">Change image</button>
+        </div>
+        <!-- MIDDLE PART END -->
+
+        <!-- BOTTOM PART START -->
+        <div class="bottomer">
+            <!-- left section start -->
+            <div class="game-block">
+                <div class="item-box" id="left">
+                    <div class="item" value="1"></div>
+                </div>
+                <div class="item-box" id="left">
+                    <div class="item" value="2"></div>
+                </div>
+                <div class="item-box" id="left">
+                    <div class="item" value="3"></div>
+                </div>
+                <div class="item-box" id="left">
+                    <div class="item" value="4"></div>
+                </div>
+                <div class="item-box" id="left">
+                    <div class="item" value="5"></div>
+                </div>
+                <div class="item-box" id="left">
+                    <div class="item" value="6"></div>
+                </div>
+                <div class="item-box" id="left">
+                    <div class="item" value="7"></div>
+                </div>
+                <div class="item-box" id="left">
+                    <div class="item" value="8"></div>
+                </div>
+                <div class="item-box" id="left">
+                    <div class="item" value="9"></div>
+                </div>
+                <div class="item-box" id="left">
+                    <div class="item" value="10"></div>
+                </div>
+                <div class="item-box" id="left">
+                    <div class="item" value="11"></div>
+                </div>
+                <div class="item-box" id="left">
+                    <div class="item" value="12"></div>
+                </div>
+                <div class="item-box" id="left">
+                    <div class="item" value="13"></div>
+                </div>
+                <div class="item-box" id="left">
+                    <div class="item" value="14"></div>
+                </div>
+                <div class="item-box" id="left">
+                    <div class="item" value="15"></div>
+                </div>
+                <div class="item-box" id="left">
+                    <div class="item" value="16"></div>
+                </div>
+            </div>
+            <!-- left section end -->
+
+            <!-- right section start -->
+            <div class="game-block">
+                <div class="item-box" id="right"></div>
+                <div class="item-box" id="right"></div>
+                <div class="item-box" id="right"></div>
+                <div class="item-box" id="right"></div>
+                <div class="item-box" id="right"></div>
+                <div class="item-box" id="right"></div>
+                <div class="item-box" id="right"></div>
+                <div class="item-box" id="right"></div>
+                <div class="item-box" id="right"></div>
+                <div class="item-box" id="right"></div>
+                <div class="item-box" id="right"></div>
+                <div class="item-box" id="right"></div>
+                <div class="item-box" id="right"></div>
+                <div class="item-box" id="right"></div>
+                <div class="item-box" id="right"></div>
+                <div class="item-box" id="right"></div>
+            </div>
+            <!-- right section end -->
+        </div>
+        <!-- BOTTOM PART END -->
+    </div>
+    <!-- MODALS START -->
+    <div class="modal-container">
+        <div class="modal-box">
+            <!-- modal check result start -->
+            <div class="modal-check">
+                <h2>You still have time, you sure? <span class="timer-mes">01:00</span></h2>
+                <button class="red-btn" id="closeCheckModal">Close</button>
+                <button id="modalBtnCheck">Check</button>
+            </div>
+            <!-- modal check result end -->
+
+            <!-- modal set image start -->
+            <div class="modal-setImage">
+                <fieldset>
+                    <legend>Paste image url</legend>
+                    <input type="text" id="customImage" placeholder="Patse image link">
+                    <span id="errMess"></span>
+                </fieldset>
+                <button class="red-btn" id="closeSetModal">Close</button>
+                <button id="modalBtnSet" disabled>Set Image</button>
+            </div>
+            <!-- modal set image end -->
+
+            <!-- modal get result message start -->
+            <div class="modal-result">
+                <h2>Result Message</h2>
+                <button class="red-btn" id="closeResultModal">Close</button>
+            </div>
+            <!-- modal get result message end -->
+
+        </div>
+    </div>
+    <!-- MODALS END -->
+
+    <script src="./jquery-3.7.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"
+        integrity="sha512-57oZ/vW8ANMjR/KQ6Be9v/+/h6bq9/l3f0Oc7vn6qMqyhvPd1cvKBRWWpzu0QoneImqr2SkmO4MSqU+RpHom3Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
